@@ -1,1 +1,1 @@
-# iharp-query-with-metadata
+# iharp-mix-query (aka. query with heterogeneous data source)
