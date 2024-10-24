@@ -96,3 +96,10 @@ if __name__ == "__main__":
         false_mask = false_mask | mask
 
     print(false_mask.all())
+
+    query_fully_covered = false_mask.all().values
+    if not query_fully_covered:
+        pass
+        # TODO: get the api call range for the missed part of query
+        # An API call is a combination of {(min_lat, max_lat), (min_lon, max_lon), (start_datetime, end_datetime)}
+        # The API call should fully cover the missed part of the query, i.e., the False values in the mask
